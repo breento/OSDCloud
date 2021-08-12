@@ -1,4 +1,4 @@
-Write-Host "Hello, TEST"
+Write-Host "Hello, Welcome to OSDCLoud"
 
 Write-Host "Set Resolution"
 Set-DisRes 1600
