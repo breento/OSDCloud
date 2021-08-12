@@ -12,6 +12,6 @@ Write-Host "Hello, Welcome to OSDCLoud"
 #Start-OSDCloud
 
 $Uri = 'https://dev.azure.com/breento-devops/test/_apis/git/repositories/test/items?path=OSDCloud/Start-BreentoOSDCloud.ps1&download=true&api-version=6.0'
-$script = Invoke-RestMethod -Uri $url -Method Get 
+$script = Invoke-RestMethod -Uri $uri -Method Get 
 Invoke-Expression $script
 
