@@ -1,4 +1,6 @@
 Write-Host "Hello, TEST"
+
+Write-Host "Set Resolution"
 Set-DisRes 1600
 
 Update-Module OSD -Force
