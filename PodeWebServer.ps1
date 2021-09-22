@@ -13,7 +13,8 @@ Start-Process msiexec -ArgumentList "/i $env:TEMP\$(Split-Path $PSUrl.URI -Leaf)
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 choco install git -y
 
-New-Item -Type Directory C:\scripts
+New-Item -Type Directory C:\Scripts
+Set-Location C:\Scripts
 Start-Process "C:\Program Files\Git\bin\git.exe" -argumentlist "clone https://anything:$gitpat@dev.azure.com/breento-devops/Evergreen/_git/Evergreen" -wait
 
 
